@@ -27,11 +27,12 @@ const server = http.createServer((req, res) => {
     const profile = {
       name: "V",
       studentId: "692115005",
-      favouriteLanguage: "JavaScript",}
-      res.writeHead(200, { "content-type": "application/json; charset=utf-8" });
-      res.end(JSON.stringify(profile));
-      return;
-    }
+      favouriteLanguage: "JavaScript"
+    };
+    res.writeHead(200, { "Content-Type": "application/json; charset=utf-8" });
+    res.end(JSON.stringify(profile));
+    return;
+  }
   // TODO: replace this with a proper 404 response
 
   res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
